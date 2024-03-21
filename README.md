@@ -35,3 +35,5 @@ java -cp target/AREP-Lab7-1.0-SNAPSHOT.jar edu.eci.arep.SecureLogin
 ```
 java -cp target/AREP-Lab7-1.0-SNAPSHOT.jar edu.eci.arep.UserManager
 ```
+
+5. En un navegador ve al siguiente enlace para probar el programa: https://localhost:38000/login.html
