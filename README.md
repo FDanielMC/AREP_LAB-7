@@ -61,3 +61,45 @@ La arquitectura de seguridad implementada en esta aplicación ha sido diseñada 
 3. **Incluir el certificado en el almacén de confianza**: Se requiere añadir el certificado del nuevo servicio al almacén de confianza compartido. De esta forma, los otros servicios podrán confiar en el nuevo servicio durante las comunicaciones seguras.
 4. **Modificar la configuración de los servicios existentes**: Es necesario realizar ajustes en la configuración de los servicios ya en funcionamiento para que confíen en el nuevo certificado incluido en el almacén de confianza. Este proceso podría implicar reiniciar los servicios o recargar la configuración de seguridad durante la ejecución.
 5. **Iniciar la comunicación cifrada**: Una vez que todos los servicios hayan establecido la confianza mutua en los certificados, se podrá iniciar la comunicación segura entre ellos mediante el uso de HTTPS.
+
+## CASOS DE PRUEBA
+
+### Inicio de Sesión Exitoso
+
+Se verificará que se validen las credenciales de manera correcta:
+
+* **Usuario**: Daniel
+* **Contraseña**: Daniel
+
+![image](https://github.com/FDanielMC/AREP_LAB-7/assets/123689924/6c79b9c9-4f14-4c05-a883-ffa177814776)
+
+* **Usuario**: Moreno
+* **Contraseña**: Moreno
+
+![image](https://github.com/FDanielMC/AREP_LAB-7/assets/123689924/91c5084a-a4eb-4da9-85cb-73a86cef10af)
+
+**Salida esperada:** Se recibe el JSON {"result":true} y se muestra el mensaje "Credenciales correctas".
+
+### Inicio de Sesión sin Éxito
+
+Se verificará que se validen las credenciales de manera correcta:
+
+* **Usuario**: Daniel
+* **Contraseña**: Dani
+
+![image](https://github.com/FDanielMC/AREP_LAB-7/assets/123689924/03a0d729-3c35-4789-9a08-7ffd6e934a66)
+
+* **Usuario**: Moreno
+* **Contraseña**: More
+
+![image](https://github.com/FDanielMC/AREP_LAB-7/assets/123689924/a4023b78-cb62-434e-8af5-9e0cd63ae915)
+
+**Salida esperada:** Se recibe el JSON {"result":false} y se muestra el mensaje "Credenciales incorrectas".
+
+### Vídeo Desplegando el Programa
+
+
+
+## Authors
+
+* Daniel Fernando Moreno Cerón
