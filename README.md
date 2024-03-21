@@ -14,7 +14,7 @@ Este proyecto implica la creación de una aplicación web que asegura un acceso 
 
 1. Clona el repositorio:
 ```
-https://github.com/FDanielMC/AREP_LAB-7.git
+git clone https://github.com/FDanielMC/AREP_LAB-7.git
 ```
 
 2. Ve a la carpeta del repositorio clonado:
