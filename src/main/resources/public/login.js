@@ -4,9 +4,9 @@ function loadGetMsg() {
     const xhttp = new XMLHttpRequest();
     xhttp.onload = function() {
         const result = JSON.parse(this.responseText).result;
-        let response = "El usuario o la contraseña son incorrectos";
+        let response = "Credenciales incorrectas";
         if (result == true) {
-            response = "Se ha accedido satisfactoriamente";
+            response = "Credenciales correctas";
         }
         document.getElementById("getrespmsg").innerHTML = response;
     }

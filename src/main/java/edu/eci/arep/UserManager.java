@@ -27,8 +27,8 @@ public class UserManager {
      * seguridad.
      */
     public static void main(String[] args) throws NoSuchAlgorithmException {
-        addUser("Daniel", "123456");
-        addUser("Moreno", "654321");
+        addUser("Daniel", "Daniel");
+        addUser("Moreno", "Moreno");
         port(getPort());
         secure("certificados/ecikeystore.p12", "areplab7", null, null);
         get("/user", (req, res) -> {

@@ -113,7 +113,7 @@ public class SecureLogin {
      * @throws IOException Si ocurre un error al leer o escribir datos.
      */
     public static String accessURL(String query) throws IOException {
-        URL siteURL = new URL("https://localhost:8088/user?" + query);
+        URL siteURL = new URL("https://localhost:35000/user?" + query);
         URLConnection urlConnection = siteURL.openConnection();
         Map<String, List<String>> headers = urlConnection.getHeaderFields();
         Set<Map.Entry<String, List<String>>> entrySet = headers.entrySet();
