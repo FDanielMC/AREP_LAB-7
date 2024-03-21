@@ -98,7 +98,9 @@ Se verificará que se validen las credenciales de manera correcta:
 
 ### Vídeo Desplegando el Programa
 
-
+[![Video de YouTube](![image](https://github.com/FDanielMC/AREP_LAB-7/assets/123689924/f7abe6d6-118d-4cf3-8e3e-a56515b1605e)
+)
+](https://youtu.be/NuojNlkx9c8)
 
 ## Authors
 
